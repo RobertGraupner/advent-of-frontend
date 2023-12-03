@@ -1,5 +1,5 @@
 export class ChristmasQueue<T> {
-   private queue: { value: T; priority: number }[] = [];
+  private queue: { value: T; priority: number }[] = [];
 
   enqueue(item: T, priority: number): void {
     this.queue.push({ value: item, priority });
@@ -16,5 +16,4 @@ export class ChristmasQueue<T> {
   isEmpty(): boolean {
     return this.queue.length === 0;
   }
-  
 }
